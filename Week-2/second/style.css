@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    flex: 1;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+}
+
+.red{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform-origin: top left;
+    transition: all 0.5s ease-in-out;
+}
+.blue{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform-origin: bottom left;
+    transition: all 0.5s ease-in-out;
+}
+.yellow{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    transform-origin: top right;
+    transition: all 0.5s ease-in-out;
+}
+
+.green{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    transform-origin: bottom right;
+    transition: all 0.5s ease-in-out;
+}
+.main:hover .red{
+    color:red;
+    transform: rotate(90deg);
+}
+
+.main:hover .yellow{
+    color : yellow;
+    transform: rotate(-90deg);
+}
+.main:hover .blue{
+    color:blue;
+    transform: rotate(-90deg);
+}
+.main:hover .green{
+    color:green;
+    transform: rotate(90deg);
+}

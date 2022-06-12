@@ -1,5 +1,5 @@
 const getNumber =() =>{
-    return Math.random()*1000;
+    return Math.floor(Math.random()*1000);
 }
 class CustomPromise {
     constructor(handler) {
@@ -41,7 +41,7 @@ class CustomPromise {
 
 }
 console.log(getNumber());
-const Test = new Promise((resolve,reject)=>{
+const Test = new CustomPromise((resolve,reject)=>{
     if((getNumber()%5) !==0){
         resolve('promise Resolved');
     }
